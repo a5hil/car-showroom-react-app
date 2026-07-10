@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import ViewCar from './Components/ViewCar'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import AddCar from './Components/AddCar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ViewCar />} />
+          <Route path="/" element={<AddCar />} />
+          <Route path="/view-cars" element={<ViewCar />} />
         </Routes>
       </BrowserRouter>
     </>
